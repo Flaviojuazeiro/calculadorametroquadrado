@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --fonte1: 'Montserrat', sans-serif;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte1);
+
+    
+}
+
+body{
+    background-color: #EFF0F1;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #325353;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+h1{
+    color: white;
+    margin: 20px;
+ 
+
+}
+section{
+    display: flex;
+
+    width: 950px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+main.contaner1{
+    width: 480px;
+  
+    padding: 0px;
+   
+}
+
+
+main.contaner2{
+    width: 400px;
+    padding: 0px;
+    text-align:right
+ 
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    background-color: rgba(195, 198, 201, 0.658);
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid #d9e0e3;
+    outline: none !important;
+    padding: 5px 5px;
+}
+
+input:focus {
+    background-color: #f0f2f5;
+    border: 1px solid #81bef7;
+  }
+
+  /*chome*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*mozila*/
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 5px;
+    
+}
+
+button{
+    width: 230px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #f0f2f5;
+    border: 1px solid #81bef7;
+    border-radius: 5px;
+     
+}
+
+.btnapagar{
+    width: 150px;
+    background-color: #ffffff;
+    border: 3px solid #81bef736;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+label{
+  padding: 5px 5px;
+}
+
+.contaner2 p{
+    padding: 5px;
+}
+
+
+
+
+.resultados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+   
+    border-left: 3px solid rgb(64, 238, 41);
+    margin: 8px;
+    border-bottom: 1px solid rgb(202, 206, 206);
+
+}
+
+#divvendas{
+    background-color: rgb(252, 253, 200);
+
+}
+
+span{
+    color: rgba(53, 54, 59, 0.849);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#valorvenda{
+    font-weight: 800;
+    font-size: 25px;
+    color: rgba(238, 14, 14, 0.849);
+
+}
+
+
+
+
+
