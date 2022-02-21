@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,90 @@
     <title>M² Calculadora Metro Quadrado</title>
     <link rel="shortcut icon" href="imagens/icone_calculadora.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <header>
         <h1>Calculadora Metro Quadrado</h1>
     </header>
     <section>
         <main class="contaner1">
-          
+
             <label for="">Largura</label><br>
-            <input id="valor1"  type="number" placeholder="Largura"  required><br>
+            <input id="valor1" type="number" placeholder="Largura" required><br>
             <label for="">Altura</label><br>
-            <input id="valor2"  type="number" placeholder="Altura"   required><br/>
+            <input id="valor2" type="number" placeholder="Altura" required><br />
             <label for="">Valor metro R$</label><br>
-            <input type="text" placeholder= "R$ 0.00"   maxlength="9" id="valor3" onkeyup="formatarMoeda()"><br>
+            <input type="text" placeholder="R$ 0.00" maxlength="9" id="valor3" onkeyup="formatarMoeda()"><br>
             <label for="">Quantidade</label><br>
-            <input id="valor4"  type="number" value="1" required><br/>
+            <input id="valor4" type="number" value="1" required><br />
             <label for="">Outros Custos R$</label><br>
-            <input type="text" placeholder="R$ 0.00"  maxlength="9" id="outros" onkeyup="formatarMoeda2()"><br>
+            <input type="text" placeholder="R$ 0.00" maxlength="9" id="outros" onkeyup="formatarMoeda2()"><br>
 
             <div class="botoes">
-            <button class="btnapagar" onclick="limparInputs()">Apagar</button>
-            <button onclick="multiplicar()">Calcular</button>
-            
+                <button class="btnapagar" onclick="limparInputs()">Apagar</button>
+                <button onclick="multiplicar()">Calcular</button>
 
-        </div>
+
+            </div>
         </main>
 
         <main class="contaner2">
-           
-            <div class="resultados"><p>Largura:</p><span id="largura">0.00</span></div>           
-            <div class="resultados"><p>Altura: </p><span id="altura">0.00</span> </div>
-            <div class="resultados">  <p>Área M²: </p> <span id="area">0.00</span> </div>
-            <div class="resultados">   <p>Total metros M²: </p> <span id="totalmetros">0.00</span> </div>
 
-            <div class="resultados"><p>Valor Metro:</p><span id="valormetro">R$ 0,00</span> </div>
+            <div class="resultados">
+                <p>Largura:</p><span id="largura">0.00</span>
+            </div>
+            <div class="resultados">
+                <p>Altura: </p><span id="altura">0.00</span>
+            </div>
+            <div class="resultados">
+                <p>Área M²: </p> <span id="area">0.00</span>
+            </div>
+            <div class="resultados">
+                <p>Total metros M²: </p> <span id="totalmetros">0.00</span>
+            </div>
 
-                <div class="resultados"><p>Quantidade: </p> <span id="quantidade">1</span></div>
-                <div class="resultados"><p>Outros Custos: </p> <span id="outroscustos"><span>R$ 0,00 </span></div>
-                <div class="resultados"><p>Valor Unitário: </p><span id="unitario">R$ 0,00</span></div>
-                <div class="resultados" id="divvendas"><p>Valor Venda: </p><span id="valorvenda">R$ 0,00</span></div> 
-                <div class="resultados">   <p>Quant. por Meio Metro:</p><span id="cabemeio">0.00</span></div>
-                <div class="resultados">    <p>Quant. por Metro:</p><span id="cabemetro">0.00</span> </div>
+            <div class="resultados">
+                <p>Valor Metro:</p><span id="valormetro">R$ 0,00</span>
+            </div>
 
-            </main>
+            <div class="resultados">
+                <p>Quantidade: </p> <span id="quantidade">1</span>
+            </div>
+            <div class="resultados">
+                <p>Outros Custos: </p> <span id="outroscustos"><span>R$ 0,00 </span>
+            </div>
+            <div class="resultados">
+                <p>Valor Unitário: </p><span id="unitario">R$ 0,00</span>
+            </div>
+            <div class="resultados" id="divvendas">
+                <p>Valor Venda: </p><span id="valorvenda">R$ 0,00</span>
+            </div>
+            <div class="resultados">
+                <p>Quant. por Meio Metro:</p><span id="cabemeio">0.00</span>
+            </div>
+            <div class="resultados">
+                <p>Quant. por Metro:</p><span id="cabemetro">0.00</span>
+            </div>
+
+
+        </main>
+
+        <div id="resultados-fixo"  id="divvendas">
+            <p id="p-fixo">Valor Venda:</p><span id="valorvenda-fixo">R$ 0.00</span>
+        </div>
     </section>
-
 
  
 
-<script src="script.js"></script> 
-        
+    <footer>
+        <p>Feito com &nbsp; <img src="imagens/icone-coracao.svg" /> &nbsp; por Flávio Diniz - 2022</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

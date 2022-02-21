@@ -49,6 +49,8 @@ function formatarMoeda() {
   var v4 = document.getElementById("valor4").value;
   var v5 = document.getElementById("outros").value;
 
+ 
+
   v3 = v3.replace(/\,/gi,'.'); //troca a vírgula por ponto do valor 1
   v5 = v5.replace(/\,/gi,'.'); //troca a vírgula por ponto do valor 1
 
@@ -116,11 +118,20 @@ var f3 = vunitario.toLocaleString("pt-br", { style: "currency", currency: "BRL" 
             unitario.innerHTML = (f3); 
             quantidade.innerHTML = parseFloat(v4);
             outroscustos.innerHTML = (f2);
-            valorvenda.innerHTML = (f);
+            valorvenda.innerHTML = (f);         
             cabemeio.innerHTML = (tqmetro).toFixed(4)/(2);
             cabemetro.innerHTML = (tqmetro).toFixed(4);
 
+            document.querySelector('#valorvenda-fixo').textContent = (f);
+
+            document.getElementById("resultados-fixo").style.display = 'flex';
+          
+
+
         }
+
+    
+ 
 
 
 
@@ -144,8 +155,9 @@ function limparInputs() {
   document.querySelector('#cabemeio').textContent = '0.00';
   document.querySelector('#cabemetro').textContent = '0.00';
 
+  document.querySelector('#valorvenda-fixo').textContent = 'R$ 0,00';
 
-  
+    
 }
                 
  

@@ -2,70 +2,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root{
+:root {
     --fonte1: 'Montserrat', sans-serif;
-    
+
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
     font-family: var(--fonte1);
 
-    
+
 }
 
-body{
+body {
     background-color: #EFF0F1;
 }
 
-header{
+header {
     display: flex;
     width: 100%;
     height: 100px;
     background-color: #325353;
     align-items: center;
     margin-bottom: 30px;
-    
+
 }
 
-h1{
+h1 {
+    font-size: 30px;
+    font-weight: 800;
     color: white;
     margin: 20px;
- 
+
 
 }
-section{
+
+section {
     display: flex;
-
-    width: 950px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
     background-color: white;
-    margin: auto;
+    margin: 0px auto;
     border-radius: 10px;
-    padding: 30px;
+    padding: 25px;
 }
 
-main.contaner1{
-    width: 480px;
-  
+main.contaner1 {
+    width: 56%;
     padding: 0px;
-   
+
+
+
 }
 
 
-main.contaner2{
-    width: 400px;
+main.contaner2 {
+    width: 38%;
     padding: 0px;
-    text-align:right
- 
+    text-align: right;
+    margin: 10px;
+
+
 }
 
-input{
-    width: 400px;
+input {
+    width: 85%;
     height: 40px;
-    background-color: rgba(195, 198, 201, 0.658);
+    background-color: rgba(195, 198, 201, 0.24);
     border-radius: 5px;
     margin: 5px;
     border: 1px solid #d9e0e3;
@@ -76,93 +83,282 @@ input{
 input:focus {
     background-color: #f0f2f5;
     border: 1px solid #81bef7;
-  }
+}
 
-  /*chome*/
+/*chome*/
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
+
 /*mozila*/
 input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 
-.botoes{
+.botoes {
     display: flex;
     justify-content: space-around;
-    width: 400px;
+    width: 85%;
+
     margin: 5px;
-    
+
+
+
 }
 
-button{
-    width: 230px;
+button {
+    width: 65%;
     height: 35px;
     margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #f0f2f5;
     border: 1px solid #81bef7;
     border-radius: 5px;
-     
+
 }
 
-.btnapagar{
-    width: 150px;
+.btnapagar {
+    width: 30%;
     background-color: #ffffff;
     border: 3px solid #81bef736;
     border-radius: 5px;
 
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-label{
-  padding: 5px 5px;
+label {
+    padding: 5px 5px;
 }
 
-.contaner2 p{
+.contaner2 p {
     padding: 5px;
 }
 
 
 
 
-.resultados{
+.resultados {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-   
-    border-left: 3px solid rgb(64, 238, 41);
-    margin: 8px;
+    padding: 4px;
+    margin: 1px;
+    border-left: 3px solid #75f06a;
     border-bottom: 1px solid rgb(202, 206, 206);
+
 
 }
 
-#divvendas{
+#divvendas {
     background-color: rgb(252, 253, 200);
 
 }
 
-span{
+span {
     color: rgba(53, 54, 59, 0.849);
     font-weight: 600;
     font-size: 15px;
 }
 
-#valorvenda{
+#valorvenda {
     font-weight: 800;
     font-size: 25px;
     color: rgba(238, 14, 14, 0.849);
 
 }
 
+#valorvenda-fixo {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgba(238, 14, 14, 0.849);
+
+}
+
+
+#resultados-fixo, #valorvenda-fixo {
+    display:none;
+    opacity:0%;
+  
+}
+
+#p-fixo{
+    opacity:0%;
+
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: rgb(14, 4, 36);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+
+
+
+}
+
+
+footer>p {
+    display: flex;
+    font-family: var(--fonte1);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+
+}
+
+footer>p>img {
+    width: 20px;
+
+}
+
+
+
+/*TELAS MENOS INICIO */
+
+/*Resolução 1147*/
+@media (max-width: 1117px) {
+
+    section {
+        width: 80%;
+
+
+    }
+}
+
+
+/*Resolução 1115*/
+@media (max-width: 1115px) {
+
+    section {
+        width: 90%;
+
+
+    }
+}
+
+/*Resolução 925*/
+@media (max-width: 925px) {
+
+    section {
+        width: 95%;
+    }
+
+    main.contaner1 {
+        width: 56%;
+
+    }
+
+    main.contaner2 {
+        width: 38%;
+
+
+    }
+}
+
+
+/*Resolução 735*/
+@media (max-width: 735px) {
+
+    section {
+        width: 95%;
+    }
+
+    main.contaner1 {
+        width: 56%;
+
+    }
+
+    main.contaner2 {
+        width: 38%;
+
+
+    }
+}
+
+
+/*Resolução 500*/
+@media (max-width: 500px) {
+
+    section {
+        width: 98%;
+        padding: 10px;
+
+
+    }
+
+    main.contaner1 {
+        width: 95%;
+
+    }
+
+    main.contaner2 {
+        width: 95%;
+        justify-items: center;
+
+    }
+
+
+    input {
+        width: 96%;
+
+
+    }
+
+    .botoes {
+
+        width: 95%;
+
+
+
+    }
+
+    #valorvenda {
+        font-weight: 800;
+        font-size: 18px;
+
+
+    }
+
+    /*barra fixa*/
+    #resultados-fixo {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        padding: 7px;
 
 
 
 
+    }
+
+    #resultados-fixo, #valorvenda-fixo {
+        opacity:100%;
+      
+    }
+
+    #valorvenda-fixo {
+        display: flex;
+        }
+    
+    #p-fixo{
+        opacity:100%;
+    
+    }
+}
