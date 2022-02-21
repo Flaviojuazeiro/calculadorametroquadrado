@@ -49,6 +49,8 @@ section {
     margin: 0px auto;
     border-radius: 10px;
     padding: 25px;
+
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
 }
 
 main.contaner1 {
@@ -65,6 +67,7 @@ main.contaner2 {
     padding: 0px;
     text-align: right;
     margin: 10px;
+    justify-content: center;
 
 
 }
@@ -72,17 +75,17 @@ main.contaner2 {
 input {
     width: 85%;
     height: 40px;
-    background-color: rgba(195, 198, 201, 0.24);
+    background-color: rgba(195, 198, 201, 0.096);
     border-radius: 5px;
     margin: 5px;
-    border: 1px solid #d9e0e3;
+    border: 2px solid #d9e0e3;
     outline: none !important;
     padding: 5px 5px;
 }
 
 input:focus {
-    background-color: #f0f2f5;
-    border: 1px solid #81bef7;
+    background-color: #57bef60b;
+    border: 1px solid #66aff3;
 }
 
 /*chome*/
@@ -115,7 +118,7 @@ button {
     height: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f0f2f5;
+    background-color: #d4dbe6;
     border: 1px solid #81bef7;
     border-radius: 5px;
 
@@ -135,10 +138,13 @@ button:hover {
 
 label {
     padding: 5px 5px;
+    font-size: 15px;
+    color: #34363a;
 }
 
 .contaner2 p {
-    padding: 5px;
+    padding: 4px;
+    font-size: 14px;
 }
 
 
@@ -149,10 +155,10 @@ label {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    padding: 4px;
-    margin: 1px;
+    padding: 1px;
+    margin: 6px;
     border-left: 3px solid #75f06a;
-    border-bottom: 1px solid rgb(202, 206, 206);
+    border-bottom: 1px solid rgba(202, 206, 206, 0.486);
 
 
 }
