@@ -75,7 +75,8 @@ if (v5==''){
 
   var resultado3 =   parseFloat(resultado1) * parseFloat(v4);   // calcula area x quantidade
 
-  var soma = parseFloat(resultado2) + parseFloat(v5);   // calcula valor + outros custos 
+  var soma = parseFloat(resultado2) + parseFloat(v5);  // calcula valor + outros custos 
+  soma= soma * parseFloat(v4); 
 
   var vunitario = parseFloat(soma) / parseFloat(v4);   // calcula valor unitario
 
@@ -149,7 +150,7 @@ function limparInputs() {
   document.querySelector('#totalmetros').textContent = '0.00';
   document.querySelector('#valormetro').textContent = 'R$ 0,00';
   document.querySelector('#unitario').textContent = 'R$ 0,00';
-  document.querySelector('#quantidade').textContent = '1';
+  document.querySelector('#quantidade').textContent = '0';
   document.querySelector('#outroscustos').textContent = 'R$ 0,00';
   document.querySelector('#valorvenda').textContent = 'R$ 0,00';
   document.querySelector('#cabemeio').textContent = '0.00';

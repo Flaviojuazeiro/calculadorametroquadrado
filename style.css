@@ -50,7 +50,7 @@ section {
     border-radius: 10px;
     padding: 25px;
 
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 5%);
 }
 
 main.contaner1 {
@@ -145,6 +145,7 @@ label {
 .contaner2 p {
     padding: 4px;
     font-size: 14px;
+    color: #686564;
 }
 
 
@@ -189,10 +190,16 @@ span {
 }
 
 
-#resultados-fixo, #valorvenda-fixo {
+#valorvenda-fixo{
     display:none;
     opacity:0%;
   
+  
+}
+
+#resultados-fixo{
+    background-color: rgb(252, 253, 200);
+    opacity:0%;
 }
 
 #p-fixo{
@@ -298,8 +305,10 @@ footer>p>img {
 @media (max-width: 500px) {
 
     section {
-        width: 98%;
-        padding: 10px;
+        width: 96%;
+       
+       
+        
 
 
     }
@@ -351,17 +360,21 @@ footer>p>img {
 
 
 
-
     }
 
-    #resultados-fixo, #valorvenda-fixo {
+    #resultados-fixo{
         opacity:100%;
-      
+        background-color: rgb(252, 253, 200);
+        padding: 10px;
     }
 
-    #valorvenda-fixo {
+    #valorvenda-fixo{
         display: flex;
-        }
+        opacity:100%;
+
+    }
+
+ 
     
     #p-fixo{
         opacity:100%;
