@@ -21,6 +21,7 @@
 
 body {
     background-color: #EFF0F1;
+    height: 100%;
 }
 
 header {
@@ -243,13 +244,15 @@ span {
 
 footer {
     display: flex;
+    position: absolute;
     width: 100%;
     background-color: rgb(14, 4, 36);
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10px;
-    margin-top: 100px;
+    bottom: 0px;
+
 
 
 
