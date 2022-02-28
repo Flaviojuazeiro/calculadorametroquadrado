@@ -165,6 +165,8 @@ function limparInputs() {
   document.querySelector('#cabemetro').textContent = '0.00';
 
   document.querySelector('#valorvenda-fixo').textContent = 'R$ 0,00';
+  document.getElementById("resultados-fixo").style.bottom = '-100px';
+  document.getElementById("resultados-fixo").style.transition = 'all 0.5s';
 
     
 }
