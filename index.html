@@ -25,9 +25,9 @@
             <label for="">Valor metro R$</label><br>
             <input type="text" placeholder="R$ 0.00" maxlength="9" id="valor3" onkeyup="formatarMoeda()" onclick="ocultar()"><br>
             <label for="">Quantidade</label><br>
-            <input id="valor4" type="number" value="1" required><br />
+            <input id="valor4" type="number" value="1"   onclick="ocultar()" required><br />
             <label for="">Outros Custos R$</label><br>
-            <input type="text" placeholder="R$ 0.00" maxlength="9" id="outros" onkeyup="formatarMoeda2()"><br>
+            <input type="text" placeholder="R$ 0.00" maxlength="9" id="outros" onkeyup="formatarMoeda2()"  onclick="ocultar()" ><br>
 
             <div class="botoes">
                 <button class="btnapagar" onclick="limparInputs()">Apagar</button>
