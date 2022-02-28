@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
@@ -9,19 +10,31 @@
 
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     box-sizing: border-box;
     font-family: var(--fonte1);
 
-
 }
 
-body {
+html{
+    position: relative;
     background-color: #EFF0F1;
-    height: 100%;
+   
+
+  
+}
+
+
+body{
+    position: relative;
+    background-color: #EFF0F1;
+    
+  
+
+  
 }
 
 header {
@@ -34,11 +47,6 @@ header {
     background: -moz-linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
     
    
-    
-   
-
-
-
     align-items: center;
     margin-bottom: 30px;
 
@@ -62,7 +70,6 @@ section {
     margin: 0px auto;
     border-radius: 10px;
     padding: 25px;
-
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 5%);
 }
 
@@ -169,12 +176,11 @@ label {
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     padding: 1px;
-    margin: 6px;
+    margin: 10px;
     border-left: 3px solid var(--cor02);
     border-bottom: 1px solid rgba(202, 206, 206, 0.486);
+   
   
-
-
 }
 
 #divvendas {
@@ -215,26 +221,16 @@ span {
 
 #resultados-fixo{
     display: none;
-    position: absolute;
     width: 0px;
     background-color: rgb(252, 253, 200);
     opacity:0%;
-
     box-shadow: -0px -10px 20px 0px rgba(0, 0, 0, 0.158);
   
 
 }
 
-
-}
-
 #p-fixo{
-    display:none;
-    width: 0px;
-    height: 0px;
-    opacity:0%;
-   
-
+    display: none; 
 }
 
 #p-fixo:after {
@@ -242,19 +238,19 @@ span {
 }
 
 
-footer {
+footer{
     display: flex;
-    position: absolute;
     width: 100%;
+    height: 50px;
     background-color: rgb(14, 4, 36);
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
-    bottom: 0px;
+    padding: 10px;  
+      
+    margin-top: 100px;
     
-
-
+    
 }
 
 
@@ -343,10 +339,6 @@ footer>p>img {
         width: 96%;
         padding:10px;
       
-       
-       
-        
-
 
     }
 
@@ -381,6 +373,7 @@ footer>p>img {
     #valorvenda {
         font-weight: 800;
         font-size: 18px;
+       
 
 
     }
@@ -396,11 +389,6 @@ footer>p>img {
         justify-content: space-between;
         background-color: rgb(255, 255, 255);
         padding: 7px;
-     
-      
-
-
-
     }
 
     #resultados-fixo{
@@ -421,14 +409,14 @@ footer>p>img {
  
     
     #p-fixo{
-
         opacity:100%;
-       
-    
+        display: flex;
+      
     }
 
     #p-fixo:after {
         content: 'Valor Venda:';
       
     }
+
 }

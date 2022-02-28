@@ -1,7 +1,3 @@
-
-
-     // inicio função 
-
 function formatarMoeda() {
                 var elemento = document.getElementById('valor3');   
                 var valor = elemento.value;
