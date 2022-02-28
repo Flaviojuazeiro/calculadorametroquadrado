@@ -4,7 +4,7 @@
 
 :root {
     --fonte1: 'Montserrat', sans-serif;
-    --cor01: #F0F2F5;
+    --cor01: #f0f2f5d2;
     --cor02: #4DED69;
 
 }
@@ -90,13 +90,13 @@ input {
     background-color: var(--cor01);
     border-radius: 5px;
     margin: 5px;
-    border: 2px solid #d9e0e3;
+    border: 2px solid #d9e0e383;
     outline: none !important;
     padding: 5px 5px;
 }
 
 input:focus {
-    background-color: #f0f2f5;   
+    background-color: rgba(252, 253, 200, 0.87);
     border: 1px solid #3e9ef8;
 }
 
@@ -128,7 +128,7 @@ button {
     width: 65%;
     height: 35px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     background-color: #f0f2f5;  
     border: 1px solid #81bef7;
     border-radius: 5px;
@@ -138,7 +138,7 @@ button {
 .btnapagar {
     width: 30%;
     background-color: #ffffff;
-    border: 1px solid #81bef736;
+    border: 1px solid #81bef7;
     border-radius: 5px;
 
 }
@@ -209,13 +209,28 @@ span {
 }
 
 #resultados-fixo{
+    display: none;
+    position: absolute;
+    width: 0px;
     background-color: rgb(252, 253, 200);
     opacity:0%;
+
+    box-shadow: -0px -10px 20px 0px rgba(0, 0, 0, 0.158);
+}
+
+
 }
 
 #p-fixo{
+    display:none;
+    width: 0px;
+    height: 0px;
     opacity:0%;
 
+}
+
+#p-fixo:after {
+    content: '';
 }
 
 
@@ -372,6 +387,7 @@ footer>p>img {
         justify-content: space-between;
         background-color: rgb(255, 255, 255);
         padding: 7px;
+      
 
 
 
@@ -381,6 +397,7 @@ footer>p>img {
         opacity:100%;
         background-color: rgb(252, 253, 200);
         padding: 10px;
+
     }
 
     #valorvenda-fixo{
@@ -392,7 +409,12 @@ footer>p>img {
  
     
     #p-fixo{
+
         opacity:100%;
     
+    }
+
+    #p-fixo:after {
+        content: 'Valor Venda:';
     }
 }

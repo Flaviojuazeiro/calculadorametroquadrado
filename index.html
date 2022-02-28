@@ -19,11 +19,11 @@
         <main class="contaner1">
 
             <label for="">Largura</label><br>
-            <input id="valor1" type="number" placeholder="Largura" required><br>
+            <input id="valor1" type="number" placeholder="Largura" onclick="ocultar()" required><br>
             <label for="">Altura</label><br>
-            <input id="valor2" type="number" placeholder="Altura" required><br />
+            <input id="valor2" type="number" placeholder="Altura"  onclick="ocultar()"  required><br />
             <label for="">Valor metro R$</label><br>
-            <input type="text" placeholder="R$ 0.00" maxlength="9" id="valor3" onkeyup="formatarMoeda()"><br>
+            <input type="text" placeholder="R$ 0.00" maxlength="9" id="valor3" onkeyup="formatarMoeda()" onclick="ocultar()"><br>
             <label for="">Quantidade</label><br>
             <input id="valor4" type="number" value="1" required><br />
             <label for="">Outros Custos R$</label><br>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="resultados">
-                <p>Quantidade: </p> <span id="quantidade">1</span>
+                <p>Quantidade: </p> <span id="quantidade">0</span>
             </div>
             <div class="resultados">
                 <p>Outros Custos: </p> <span id="outroscustos"><span>R$ 0,00 </span>
@@ -77,11 +77,12 @@
 
 
         </main>
-
-        <div id="resultados-fixo"  id="divvendas">
-            <p id="p-fixo">Valor Venda:</p><span id="valorvenda-fixo">R$ 0.00</span>
-        </div>
+       
     </section>
+
+    <div id="resultados-fixo"  id="divvendas">
+        <p id="p-fixo"></p><span id="valorvenda-fixo">R$ 0.00</span>
+    </div>
 
  
 

@@ -59,13 +59,21 @@ if (v5==''){
 }
 
   
-  if (v1 == '' || v2==''){
+  if (v1 == ''){
                     alert('Campo em branco!')
+                    document.getElementById("valor1").style.border = 'solid 1px red';
+                     
                     return
 }
+if (v2 == ''){
+  alert('Campo em branco!')
+  document.getElementById("valor2").style.border = 'solid 1px red';
+  return
+}
                     
-  if (v3 == '' || v4==''){
+  if (v3 == '' ){
                     alert('Campo em branco!')
+                    document.getElementById("valor3").style.border = 'solid 1px red';
                     return
   }
   
@@ -125,8 +133,8 @@ var f3 = vunitario.toLocaleString("pt-br", { style: "currency", currency: "BRL" 
 
             document.querySelector('#valorvenda-fixo').textContent = (f);
 
-            document.getElementById("resultados-fixo").style.display = 'flex';
-          
+           document.getElementById("resultados-fixo").style.display = 'flex';
+           document.getElementById("resultados-fixo").style.bottom = '0px';
 
 
         }
@@ -159,6 +167,23 @@ function limparInputs() {
   document.querySelector('#valorvenda-fixo').textContent = 'R$ 0,00';
 
     
+}
+
+
+
+
+        //esconde div fixa ao click no input
+
+        function ocultar() {
+
+       document.getElementById("resultados-fixo").style.bottom = '-100px';
+       document.getElementById("resultados-fixo").style.transition = 'all 0.5s';
+
+       document.getElementById("valor1").style.border = '1px solid #3e9ef8';
+       document.getElementById("valor2").style.border = '1px solid #3e9ef8';
+       document.getElementById("valor3").style.border = '1px solid #3e9ef8';
+
+
 }
                 
  
