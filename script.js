@@ -62,6 +62,8 @@ if (v5==''){
                     document.getElementById("valor1").style.border = 'solid 1px red';
                     document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
                     document.getElementById("alerta").style.transition = 'all 0.5s';
+
+              
                    
                      
                     return
@@ -189,11 +191,21 @@ function limparInputs() {
 
       
 
-       document.getElementById("alerta").style.opacity='0';
+       document.getElementById("alerta").style.opacity='0';       
        document.getElementById("alerta").style.transition = 'all 0.5s';
-     
+      
 
 }
+
+
+setInterval(function() {
+  $('#alerta').fadeOut('fast');
+}, 3000);
+
+
+
+
+
 
 
                 

@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="imagens/icone_calculadora.png" type="image/png">
     <link rel="stylesheet" href="style.css"?v=3285>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
    
 
@@ -18,12 +19,16 @@
 
 </head>
 
-<body>
+<body >
     <header>
         <h1>Calculadora Metro Quadrado</h1>
     </header>
 
-    <div id="alerta">Verificar Campos!</div>
+
+    <div id="contaner-alerta">
+        <div id="alerta">Verificar Campos!</div>
+    </div>
+   
    
    
 
@@ -90,13 +95,15 @@
 
     </section>
 
-    <div id="resultados-fixo"  id="divvendas">
-        <p id="p-fixo"></p><span id="valorvenda-fixo">R$ 0.00</span>
-    </div>
+
     
     <footer>
         <p>Feito com &nbsp; <img src="imagens/icone-coracao.svg" /> &nbsp; por Flávio Diniz - 2022</p>
     </footer>
+
+    <div id="resultados-fixo"  id="divvendas">
+        <p id="p-fixo"></p><span id="valorvenda-fixo">R$ 0.00</span>
+    </div>
 
    
 </body>
