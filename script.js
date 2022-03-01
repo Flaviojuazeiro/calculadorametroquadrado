@@ -1,3 +1,5 @@
+
+
 function formatarMoeda() {
                 var elemento = document.getElementById('valor3');   
                 var valor = elemento.value;
@@ -56,20 +58,24 @@ if (v5==''){
 
   
   if (v1 == ''){
-                    alert('Campo em branco!')
+                   
                     document.getElementById("valor1").style.border = 'solid 1px red';
+                    document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
+                    document.getElementById("alerta").style.transition = 'all 0.5s';
+                   
                      
                     return
 }
 if (v2 == ''){
-  alert('Campo em branco!')
   document.getElementById("valor2").style.border = 'solid 1px red';
+  document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
   return
 }
                     
   if (v3 == '' ){
-                    alert('Campo em branco!')
+                 
                     document.getElementById("valor3").style.border = 'solid 1px red';
+                    document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
                     return
   }
   
@@ -181,7 +187,14 @@ function limparInputs() {
        document.getElementById("valor2").style.border = '1px solid #3e9ef8';
        document.getElementById("valor3").style.border = '1px solid #3e9ef8';
 
+      
+
+       document.getElementById("alerta").style.opacity='0';
+       document.getElementById("alerta").style.transition = 'all 0.5s';
+     
 
 }
+
+
                 
  
