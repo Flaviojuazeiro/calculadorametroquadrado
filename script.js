@@ -3,6 +3,8 @@
 function formatarMoeda() {
                 var elemento = document.getElementById('valor3');   
                 var valor = elemento.value;
+
+                document.getElementById("valor3").style.border = '1px solid #d9e0e383';    
         
                 valor = valor + '';
                 valor = parseInt(valor.replace(/[\D]+/g, ''));
@@ -31,7 +33,9 @@ function formatarMoeda() {
                 }
         
                 elemento.value = valor;
-                if(valor == 'NaN') elemento.value = '';        
+                if(valor == 'NaN') elemento.value = '';  
+
+               
             }
                    
               
@@ -61,16 +65,13 @@ if (v5==''){
                    
                     document.getElementById("valor1").style.border = 'solid 1px red';
                     document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
-                    document.getElementById("alerta").style.transition = 'all 0.5s';
-
-              
-                   
-                     
                     return
 }
 if (v2 == ''){
   document.getElementById("valor2").style.border = 'solid 1px red';
   document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
+ 
+  
   return
 }
                     
@@ -78,6 +79,9 @@ if (v2 == ''){
                  
                     document.getElementById("valor3").style.border = 'solid 1px red';
                     document.getElementById("alerta").style = 'display:flex'; 'opacity: 1';
+                    
+                    
+                    
                     return
   }
   
@@ -172,6 +176,8 @@ function limparInputs() {
   document.getElementById("resultados-fixo").style.bottom = '-100px';
   document.getElementById("resultados-fixo").style.transition = 'all 0.5s';
 
+  
+
     
 }
 
@@ -185,23 +191,27 @@ function limparInputs() {
        document.getElementById("resultados-fixo").style.bottom = '-100px';
        document.getElementById("resultados-fixo").style.transition = 'all 0.5s';
 
+       document.getElementById("alerta").style.opacity='0';       
+       document.getElementById("alerta").style.transition = 'all 0.5s';
        document.getElementById("valor1").style.border = '1px solid #3e9ef8';
        document.getElementById("valor2").style.border = '1px solid #3e9ef8';
        document.getElementById("valor3").style.border = '1px solid #3e9ef8';
 
-      
-
-       document.getElementById("alerta").style.opacity='0';       
-       document.getElementById("alerta").style.transition = 'all 0.5s';
-      
-
 }
+
+
+
+function corborda() {
+  document.getElementById("valor1").style.border = '1px solid #d9e0e383';
+  document.getElementById("valor2").style.border = '1px solid #d9e0e383';
+ 
+}
+
 
 
 setInterval(function() {
   $('#alerta').fadeOut('fast');
 }, 3000);
-
 
 
 

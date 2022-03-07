@@ -122,7 +122,7 @@ input {
     background-color: var(--cor01);
     border-radius: 5px;
     margin: 5px;
-    border: 2px solid #d9e0e383;
+    border: 1px solid #d9e0e383;
     outline: none !important;
     padding: 5px 5px;
 }
@@ -271,7 +271,6 @@ footer {
     align-items: center;
     text-align: center;
     padding: 10px;
-    position: absolute;
     bottom: 0;
     margin-top: 100px;
 

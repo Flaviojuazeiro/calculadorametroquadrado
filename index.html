@@ -38,9 +38,10 @@
 
 
             <label for="">Largura</label><br>
-            <input id="valor1" type="number" placeholder="Largura" onclick="ocultar()" required><br>
+            <input id="valor1" type="number" placeholder="Largura" onclick="ocultar()" onkeyup="corborda()" 
+            required><br>
             <label for="">Altura</label><br>
-            <input id="valor2" type="number" placeholder="Altura"  onclick="ocultar()"  required><br />
+            <input id="valor2" type="number" placeholder="Altura"  onclick="ocultar()"  onkeyup="corborda()"  required><br />
             <label for="">Valor metro R$</label><br>
             <input type="text" placeholder="R$ 0.00" maxlength="9" id="valor3" onkeyup="formatarMoeda()" onclick="ocultar()"><br>
             <label for="">Quantidade</label><br>
