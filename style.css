@@ -261,6 +261,11 @@ span {
     content: '';
 }
 
+.icones-compartilhar{
+    width: 100%;
+    height: 300px;
+}
+
 
 footer {
     display: flex;
