@@ -60,6 +60,13 @@ if (v5==''){
     v5 ="0";
 }
 
+
+document.getElementById("valor1").style.border = 'solid 1px #d9e0e383'; ////////aqui 
+document.getElementById("valor2").style.border = 'solid 1px #d9e0e383';
+document.getElementById("valor3").style.border = 'solid 1px #d9e0e383';
+
+
+
   
   if (v1 == ''){
                    
@@ -83,6 +90,7 @@ if (v2 == ''){
                     
                     
                     return
+
   }
   
 
@@ -193,19 +201,19 @@ function limparInputs() {
 
        document.getElementById("alerta").style.opacity='0';       
        document.getElementById("alerta").style.transition = 'all 0.5s';
-       document.getElementById("valor1").style.border = '1px solid #3e9ef8';
-       document.getElementById("valor2").style.border = '1px solid #3e9ef8';
-       document.getElementById("valor3").style.border = '1px solid #3e9ef8';
+      // document.getElementById("valor1").style.border = '1px solid #3e9ef8';
+      // document.getElementById("valor2").style.border = '1px solid #3e9ef8';
+      // document.getElementById("valor3").style.border = '1px solid #3e9ef8';
 
 }
 
 
 
-function corborda() {
-  document.getElementById("valor1").style.border = '1px solid #d9e0e383';
-  document.getElementById("valor2").style.border = '1px solid #d9e0e383';
+//function corborda() {
+ // document.getElementById("valor1").style.border = '1px solid #d9e0e383';
+//  document.getElementById("valor2").style.border = '1px solid #d9e0e383';
  
-}
+//}
 
 
 
