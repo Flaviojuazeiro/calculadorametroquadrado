@@ -257,16 +257,7 @@ span {
     content: '';
 }
 
-.icones-compartilhar{
-    display: flex;
-    width: 50%;
-    margin: auto;
-    background-color: #34363a;
-    align-items: center;
-    justify-content: center;
 
-    
-}
 
 #copy{
     display: flex;
@@ -287,7 +278,7 @@ span {
 
 h5{
     color: #34363a;
-    
+
 }
 
 
