@@ -52,9 +52,14 @@ function formatarMoeda() {
   var v5 = document.getElementById("outros").value;
 
  
-
-  v3 = v3.replace(/\,/gi,'.'); //troca a vírgula por ponto do valor 1
+ 
+ 
+  v3 = v3.replace(/\,/gi,'.'); //troca a vírgula por ponto do valor 1  
   v5 = v5.replace(/\,/gi,'.'); //troca a vírgula por ponto do valor 1
+
+
+  
+  
 
 if (v5==''){
     v5 ="0";
@@ -94,17 +99,29 @@ if (v2 == ''){
   }
   
 
+  v3 =  v3.replace(/[^\d]+/g,'');
+
+  v5 =  v5.replace(/[^\d]+/g,'');
+alert(v5);
+v5 =   parseFloat(v5)/100;
+ 
   var resultado1 = parseFloat(v1) * parseFloat(v2); // calcula altura x largura
-  var resultado2 =   parseFloat(v3) * parseFloat(resultado1);   // calcula valor vezes metro 
+
+  var resultado2 =   parseFloat(v3) * parseFloat(resultado1)/100;   // calcula valor vezes metro 
+
+
+
+  
 
   var resultado3 =   parseFloat(resultado1) * parseFloat(v4);   // calcula area x quantidade
 
   var soma = parseFloat(resultado2) + parseFloat(v5);  // calcula valor + outros custos 
   soma= soma * parseFloat(v4); 
 
+  
   var vunitario = parseFloat(soma) / parseFloat(v4);   // calcula valor unitario
 
-
+  
 
   //------------------------------------------------------
   //calculo quantidade  por  metro quadrado
@@ -116,34 +133,34 @@ if (v2 == ''){
   //---------------------------------------------------
 
 
-
-  
-  
- 
-
     
 
 //com R$
-var f = soma.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
- v5 =   parseFloat(v5)
+
+
 var f2 = v5.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
-
 
 var f3 = vunitario.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
+v3 =   parseFloat(v3)/100;
+var f4 = v3.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
+soma = parseFloat(soma).toFixed(4);   
+var f1 = soma.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
 
             largura.innerHTML = parseFloat(v1).toFixed(2);
             altura.innerHTML = parseFloat(v2).toFixed(2);
-            area.innerHTML = parseFloat(resultado1).toFixed(2);
-            totalmetros.innerHTML = parseFloat(resultado3).toFixed(2);
-            valormetro.innerHTML = (v3);
+            area.innerHTML = parseFloat(resultado1).toFixed(4);
+            totalmetros.innerHTML = parseFloat(resultado3).toFixed(4);
+            valormetro.innerHTML = (f4);
             unitario.innerHTML = (f3); 
             quantidade.innerHTML = parseFloat(v4);
             outroscustos.innerHTML = (f2);
-            valorvenda.innerHTML = (f);         
+
+            valorvenda.innerHTML = "R$ "+ parseFloat(soma).toFixed(4);    
+
             cabemeio.innerHTML = (tqmetro).toFixed(4)/(2);
             cabemetro.innerHTML = (tqmetro).toFixed(4);
 
@@ -214,6 +231,26 @@ function limparInputs() {
 //  document.getElementById("valor2").style.border = '1px solid #d9e0e383';
  
 //}
+
+
+
+
+function copiarTexto() {
+  
+  let textoCopiado = document.getElementById('valorvenda');
+  textoCopiado.select();
+  textoCopiado.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+ 
+  alert("O texto é: " + textoCopiado.value);
+}
+
+
+
+
+
+
+
 
 
 
