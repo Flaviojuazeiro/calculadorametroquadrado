@@ -146,7 +146,12 @@ var f3 = vunitario.toLocaleString("pt-br", { style: "currency", currency: "BRL" 
 v3 =   parseFloat(v3)/100;
 var f4 = v3.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
-var f1 = soma.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+var f1 = soma.toLocaleString("pt-br", { minimumFractionDigits: 4, style: "currency", currency: "BRL" });
+
+
+
+
+
 
 
             largura.innerHTML = parseFloat(v1).toFixed(2);
@@ -158,7 +163,8 @@ var f1 = soma.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
             quantidade.innerHTML = parseFloat(v4);
             outroscustos.innerHTML = (f2);
 
-            valorvenda.innerHTML = (f1);  
+            valorvenda.innerHTML = (f1);
+            valormetro.innerHTML = (f4);
 
             cabemeio.innerHTML = (tqmetro).toFixed(4)/(2);
             cabemetro.innerHTML = (tqmetro).toFixed(4);
