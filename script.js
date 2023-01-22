@@ -102,7 +102,7 @@ if (v2 == ''){
   v3 =  v3.replace(/[^\d]+/g,'');
 
   v5 =  v5.replace(/[^\d]+/g,'');
-alert(v5);
+
 v5 =   parseFloat(v5)/100;
  
   var resultado1 = parseFloat(v1) * parseFloat(v2); // calcula altura x largura
