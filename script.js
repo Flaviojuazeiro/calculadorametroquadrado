@@ -252,6 +252,7 @@ setInterval(function() {
 }, 3000);
 
 window.location.reload(true);
+window.location.reload();
 
 
 
