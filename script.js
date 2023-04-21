@@ -146,7 +146,7 @@ var f3 = vunitario.toLocaleString("pt-br", { style: "currency", currency: "BRL" 
 v3 =   parseFloat(v3)/100;
 var f4 = v3.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
-var f1 = soma.toLocaleString("pt-br", { minimumFractionDigits: 4, style: "currency", currency: "BRL" });
+var f1 = soma.toLocaleString("pt-br", { minimumFractionDigits: 2, style: "currency", currency: "BRL" });
 
 
 
@@ -169,13 +169,14 @@ var f1 = soma.toLocaleString("pt-br", { minimumFractionDigits: 4, style: "curren
             cabemeio.innerHTML = (tqmetro).toFixed(4)/(2);
             cabemetro.innerHTML = (tqmetro).toFixed(4);
 
-            document.querySelector('#valorvenda-fixo').textContent = (f);
+            document.querySelector('#valorvenda-fixo').textContent = (f1);
 
            document.getElementById("resultados-fixo").style.display = 'flex';
            document.getElementById("resultados-fixo").style.bottom = '0px';
+           
 
 
-        }
+        };
 
     
  
@@ -227,15 +228,7 @@ function limparInputs() {
       // document.getElementById("valor2").style.border = '1px solid #3e9ef8';
       // document.getElementById("valor3").style.border = '1px solid #3e9ef8';
 
-}
-
-
-
-//function corborda() {
- // document.getElementById("valor1").style.border = '1px solid #d9e0e383';
-//  document.getElementById("valor2").style.border = '1px solid #d9e0e383';
- 
-//}
+};
 
 
 
@@ -248,15 +241,10 @@ function copiarTexto() {
   document.execCommand("copy");
  
   alert("O texto é: " + textoCopiado.value);
-}
+};
 
 
-
-
-
-
-
-
+;
 
 
 setInterval(function() {

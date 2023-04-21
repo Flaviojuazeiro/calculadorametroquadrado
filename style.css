@@ -273,11 +273,12 @@ span {
 .palavraschave{
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 40px;
 }
 
-h5{
+h3{
     color: #34363a;
+  
 
 }
 
@@ -472,4 +473,3 @@ footer>p>img {
 
     }
 
-}
