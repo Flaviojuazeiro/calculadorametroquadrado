@@ -251,6 +251,8 @@ setInterval(function() {
   $('#alerta').fadeOut('fast');
 }, 3000);
 
+window.location.reload(true);
+
 
 
 
